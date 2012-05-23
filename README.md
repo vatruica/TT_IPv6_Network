@@ -14,6 +14,7 @@ Requirements:
 
 - Asus RT-N16 router running OpenWRT
 - internet connection
+- linux running pc
 - tunnel broker (SixXS - https://www.sixxs.net)
 
 
