@@ -31,3 +31,18 @@ Main steps :
 4. DHCPv6,  radvd, fw rules 
 
 5. test
+
+How to:
+------------
+
+Install OpenWRT on Asus RT-N16 
+
+1. Get this code: git pull git://github.com/moozer/TT_Asus_RT-N16_and_OpenWrt.git
+
+2. Run the script: cd TT_Asus_RT-N16_and_OpenWrt followed by ./runme.sh
+
+3. Follow what the script says
+
+4. Resetting to defaults: telnet 192.168.1.1, mtd erase nvram and finally reboot
+
+5. More here : https://github.com/moozer/TT_Asus_RT-N16_and_OpenWrt
