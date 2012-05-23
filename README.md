@@ -36,6 +36,7 @@ How to:
 ------------
 
 Install OpenWRT on Asus RT-N16 
+------------
 
 1. Get this code: git pull git://github.com/moozer/TT_Asus_RT-N16_and_OpenWrt.git
 
@@ -46,3 +47,17 @@ Install OpenWRT on Asus RT-N16
 4. Resetting to defaults: telnet 192.168.1.1, mtd erase nvram and finally reboot
 
 5. More here : https://github.com/moozer/TT_Asus_RT-N16_and_OpenWrt
+
+Use a tunnel broker, preferably SixXS
+------------
+
+1. Make account here -> https://www.sixxs.net/signup/create/ 
+
+NOTEs: 
+- it is reccomended to use a real address and reason because it will be verified
+- type address on multiple lines
+- type more than one line for a reason
+- wait for registration; you will most likely receive confirmation in <24h
+
+
+
