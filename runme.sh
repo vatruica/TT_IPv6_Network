@@ -1,6 +1,11 @@
 #!/bin/bash
 #
-# files needed : /etc/opkg.conf ; /etc/config/aiccu ; /etc/config/system ; /etc/config/network ; /etc/config/radvd
+# files needed : 
+#/etc/opkg.conf ; 
+#/etc/config/aiccu ; 
+#/etc/config/system ; 
+#/etc/config/network ; 
+#/etc/config/radvd ;
 # 
 
 # this is going to be needed 
@@ -72,12 +77,4 @@ echo 'press enter to reboot'
 Pause
 
 reboot
-
-#lets see if its working
-/etc/init.d/aiccu start
-/etc/init.d/radvd start
-
-echo 'if the following output is something like - ..... - then it's working'
-echo 'if not ... you've done something wrong!!!
-logread | grep 'what was it?!'
 
