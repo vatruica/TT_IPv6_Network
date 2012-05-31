@@ -69,6 +69,11 @@ Use a tunnel broker, preferably SixXS
 Install and configuring aiccu on the router
 ------------
 - connect to the router using telnet/ssh
+- run the runme.sh script
+- follow instructions
+
+...whats down doesnt matter now ... waiting for modifications!!
+
 - edit the /etc/opkg.conf file (nano /etc/opkg.conf) and replace the link in the first line with our ftp ( ftp://10.140.16.27/openwrt/brcm4716/packages)
 - use the "opkg update" and "opkg install aiccu" commands (obviously without the quotes)
 - edit the /etc/config/aiccu file and insert your credentials where they are pointed to be 
