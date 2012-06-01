@@ -1,0 +1,11 @@
+config aiccu
+	option username		'TVV1-SIXXS'
+	option password		'Fl1KDJSt'
+	option protocol		'tic'
+	option server		'tic.sixxs.net'
+	option interface	'sixxs.0'
+	option tunnel_id	'T94882'
+	option requiretls	''
+	option defaultroute	'1'
+	option nat		'1'
+	option heartbeat	'1'
