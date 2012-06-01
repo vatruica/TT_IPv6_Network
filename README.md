@@ -83,12 +83,3 @@ Resources
 https://www.sixxs.net/
 https://www.sixxs.net/wiki/Aiccu/Installing_on_OpenWRT
 ...to be added
-
-- make aiccu run at startup by typing into the terminal : /etc/init.d/aiccu enable
-- start aiccu by typing into the terminal : /etc/init.d/aiccu start
-- 
-
-
-                                          
-
-
