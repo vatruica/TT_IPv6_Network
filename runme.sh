@@ -18,6 +18,13 @@ dd count=1 2>/dev/null
 stty $OLDCONFIG
 }
 
+# syntax to see if a file exists or not ; to be used with the backups so we will be sure we dont screw the original files
+#  if [ ! -f /tmp/foo.txt ]; // remove the "!" so that it will check if it exists
+#then
+#    echo "File not found!"
+#fi
+#
+
 # replacing /etc/opkg.conf file with the one from us
 echo 'Updating the opkg configuration file'
 cp /etc/opkg.conf /etc/opkg.conf.backup
