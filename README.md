@@ -69,31 +69,17 @@ Use a tunnel broker, preferably SixXS
 Install and configuring aiccu on the router
 ------------
 - connect to the router using telnet/ssh
-- edit the /etc/opkg.conf file (nano /etc/opkg.conf) and replace the link in the first line with our ftp ( ftp://10.140.16.27/openwrt/brcm4716/packages)
-- use the "opkg update" and "opkg install aiccu" commands (obviously without the quotes)
-- edit the /etc/config/aiccu file and insert your credentials where they are pointed to be 
-Example of the /etc/config/aiccu file:
-
-config aiccu
-       option username         'ABC1-SIXXS'
-       option password         '1234'
-       option protocol         
-       option server           
-       option interface        'sixxs.0'
-       option tunnel_id        
-       option requiretls       '0'
-       option defaultroute     '1'
-       option nat              '1'
-       option heartbeat        '1'
-
-- edit the /etc/config/system and replace values with the ones for your timezone
-Example of the /etc/config/system file:
->>>>>>>>>>>>>>>.insert example<<<<<<<<<<<<<<<<<<<,,,
-- make aiccu run at startup by typing into the terminal : /etc/init.d/aiccu enable
-- start aiccu by typing into the terminal : /etc/init.d/aiccu start
-- 
+- run the runme.sh script
+- follow instructions
+- connect to the router using telnet/ssh
+- run the after_reboot.sh script
+- follow instructions
 
 
-                                          
 
 
+Resources
+------------
+https://www.sixxs.net/
+https://www.sixxs.net/wiki/Aiccu/Installing_on_OpenWRT
+...to be added
