@@ -11,8 +11,10 @@
 #/etc/config/firewall
 # 
 
+echo 'restoring backups' 
+echo ' ... '
 
-cp /etc/opkg.conf.backup /etc/opkg.com
+cp /etc/opkg.conf.backup /etc/opkg.conf
 
 cp /etc/config/aiccu.backup /etc/config/aiccu
 
@@ -23,3 +25,6 @@ cp /etc/config/network.backup /etc/config/network
 cp /etc/config/radvd.backup /etc/config/radvd
 
 cp /etc/config/firewall.backup /etc/config/firewall
+
+echo 
+echo 'all should be in place now!'
