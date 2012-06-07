@@ -27,7 +27,10 @@ config interface lan
 	option proto	static
 	option ipaddr	192.170.1.1
 	option netmask	255.255.255.0
-	option ip6addr  2001:16d8:dd00:8190::1/64
+#### replace the <<replace with your ipv6 subnet prefix>>
+#### with the subnet prefix you got from sixxs
+#### check your sixxs home page after you've logged in for that
+	option ip6addr  <<replace with your ipv6 subnet prefix>>
 
 #### WAN configuration
 config interface	wan
@@ -36,12 +39,11 @@ config interface	wan
 
 ################################
 #### this is the new interface we have created
-#### replace the ip after option 'ip6addr' with 
-#### the one appointed to you by sixxs
-#### sixx6 config
+#### replace the where it says <<replace with your ...
+#### with your ipv6 you got from sixxs
 config 'interface' 'wan6'
 	option 'proto' 'static'
 	option 'ifname' 'sixxs.0'
 	option 'auto'  '1' 
-	option 'ip6addr' '2001:16d8:dd00:190::2/64'
+	option 'ip6addr' '<<replace with Your IPv6 from SixxS>>'
 	option 'send_rs' '0'

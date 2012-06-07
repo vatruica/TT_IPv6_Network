@@ -68,6 +68,10 @@ Use a tunnel broker, preferably SixXS
 
 Install and configuring aiccu on the router
 ------------
+Make sure you have the following before starting:
+- information from Sixxs : username, password, tunnel id, your ipv6, sixxs ipv6, your subnet prefix
+- internet acces on the router
+Now do the following:
 - connect to the router using telnet/ssh
 - run the runme.sh script
 - follow instructions
