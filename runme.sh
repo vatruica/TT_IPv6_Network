@@ -25,10 +25,11 @@ stty $OLDCONFIG
 #fi
 #
 
+#connecting to router
+telnet 192.168.1.1
 # replacing /etc/opkg.conf file with the one from us
 echo 'Updating the opkg configuration file'
 cp /etc/opkg.conf /etc/opkg.conf.backup
-rm -rf /etc/opkg.conf
 cp opkg.conf /etc/
 echo 'Done'
 #installing aiccu and radvd
@@ -50,7 +51,6 @@ nano aiccu
 
 #the aiccu file that was edited by the user is being copied where it should be
 cp /etc/config/aiccu /etc/config/aiccu.backup
-rm -rf /etc/config/aiccu
 cp aiccu /etc/config/
 
 echo 'aiccu config done'
@@ -68,9 +68,7 @@ echo
 Pause
 
 nano radvd
-
 cp /etc/config/radvd /etc/config/radvd.backup
-rm -rf /etc/config/radvd
 cp radvd /etc/config
 
 echo 'radvd config done'
@@ -78,19 +76,16 @@ echo
 #we will provide the system file already modified with what it needs for the Copenhagen/Denmark time zone
 echo 'The system file is being replaced'
 cp /etc/config/system /etc/config/system.backup
-rm -rf /etc/config/system
 cp system /etc/config
 echo
 #replacing /etc/config/network file with the one from us
 echo 'The network file is being replaced'
 cp /etc/config/network /etc/config/network.backup
-rm -rf /etc/config/network
 cp network /etc/config/
 echo
 #replacing /etc/config/firewall file with the one from us
 echo 'The firewall file is being replaced'
 cp /etc/config/firewall /etc/config/firewall.backup
-rm -rf /etc/config/firewall
 cp firewall /etc/config/
 echo
 #the system must be rebooted here
